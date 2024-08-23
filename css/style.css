@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  /* font-family: "Edu VIC WA NT Beginner", cursive; */
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  background-image: url("../assets/_images/background_black_city.png");
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+  /* width: 100px;
+  height: 100px; */
+  background-color: red;
+}
