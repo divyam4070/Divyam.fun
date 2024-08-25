@@ -1,0 +1,115 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #212121, #333);
+  background-size: 100% 100vh;
+  background-position: 0% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Calculator Styles */
+
+#calculator {
+  width: 250px;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #444, #555, #666);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  background-color: #003c84;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-image: linear-gradient(to bottom, #666, #777);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-image 0.2s ease-in-out;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom, #777, #888);
+}
+
+button:active {
+  background-image: linear-gradient(to bottom, #888, #999);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#keys button:nth-child(4n + 1) {
+  background-image: linear-gradient(to bottom, #999, #aaa);
+}
+
+#keys button:nth-child(4n + 1):hover {
+  background-image: linear-gradient(to bottom, #aaa, #bbb);
+}
+
+#keys button:nth-child(4n + 1):active {
+  background-image: linear-gradient(to bottom, #bbb, #ccc);
+}
+
+/* Make the "=" button span two columns */
+
+#keys button:nth-child(16) {
+  grid-column: span 2;
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+
+/* Make the "C" button red */
+
+#keys button:nth-child(17) {
+  background-image: linear-gradient(to bottom, #ff0000, #ff3333);
+  color: #fff;
+}
+
+#keys button:nth-child(17):hover {
+  background-image: linear-gradient(to bottom, #ff3333, #ff6666);
+}
+
+#keys button:nth-child(17):active {
+  background-image: linear-gradient(to bottom, #ff6666, #ff9999);
+}
+
+/* Remove the transforms to keep the keys within the calculator */
+
+#keys button {
+  transform: none;
+}
