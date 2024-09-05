@@ -16,7 +16,7 @@ body {
 
 .home {
   height: 100vh;
-  background-image: url("/background.jpg");
+  background-image: url("/lolbackground.jpg");
   background-size: cover;
 
   background-position: right;
