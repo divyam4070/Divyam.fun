@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: white;
+}
+body {
+  /* background-image: url("../assets/_images/backgrounddemonslayer.jpg"); */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("/bbackground.jpg");
+  background-size: cover;
+
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.service {
+  height: 100vh;
+  background-color: orange;
+}
+/* .title {
+  color: blue;
+  font-size: 4rem;
+ 
+  text-shadow: 2px 2px 6px white;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.title:hover {
+  text-decoration: underline;
+} */
+
+/* .title {
+  color: blue;
+  font-size: 4rem;
+  text-shadow: 2px 2px 6px white;
+  transition: 2s ease-in-out, text-shadow 02s ease-in-out;
+}
+
+.title:hover {
+  text-decoration: underline;
+  color: darkblue; 
+  text-shadow: 4px 4px 8px white; 
+} */
+
+.title {
+  position: relative; /* Required for the ::after pseudo-element */
+  color: blue;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px white;
+  transition: color 2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts the underline position */
+  width: 0;
+  height: 2px; /* Height of the underline */
+  background-color: darkblue;
+  transition: width 0.5s ease-in-out; /* Controls the animation speed */
+}
+
+.title:hover {
+  color: darkblue;
+  text-shadow: 4px 4px 8px white;
+}
+
+.title:hover::after {
+  width: 100%; /* Expands the underline from left to right */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 30px #0fa, 0 0 40px #0fa,
+      0 0 50px #0fa;
+  }
+  to {
+    text-shadow: 0 0 60px #0fa, 0 0 70px #0fa;
+  }
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+/* .title {
+  position: relative;
+  color: blue;
+  font-size: 4rem;
+  text-shadow: 2px 2px 6px white;
+  transition: color 2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px; 
+  background-color: darkblue;
+  transition: width 0.5s ease-in-out;
+}
+
+.title:hover {
+  color: darkblue;
+  text-shadow: 4px 4px 8px white;
+}
+
+.title:hover::after {
+  width: 100%;
+} */
+
+/* .tagline {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: black;
+  
+  text-shadow: 2px 2px 2px white;
+} */
+
+.tagline {
+  position: relative; /* Required for the ::after pseudo-element */
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
+
+.tagline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts the underline position */
+  width: 0;
+  height: 2px; /* Height of the underline */
+  background-color: black; /* Black underline */
+  transition: width 0.5s ease-in-out; /* Controls the animation speed */
+}
+
+.tagline:hover::after {
+  width: 80%; /* Expands the underline from left to right */
+}
+
+.navigation {
+  /* background-color: blue; */
+  background: rgb(2, 0, 36);
+  background-color: #a04747;
+  height: 3rem;
+  position: sticky;
+  color: black;
+  box-shadow: 2px 2px 10px;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+
+div nav ul {
+  padding: 1rem;
+  display: flex;
+  /* color: black; */
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#about {
+  height: 100vh;
+  background-color: red;
+}
+
+#navv {
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  font-weight: 500;
+}
+
+#navv:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+  /* font-size: 1.5rem; */
+  /* font-weight: 900; */
+}
+
+.service-section {
+  /* background-color: #a5d1ff; */
+  height: 155vh;
+}
+
+.service-heading {
+  color: #003f80;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.menu-card-item {
+  border-radius: 25px;
+  /* background-color: #bcddfe; */
+  background: rgb(123, 116, 255);
+  /* background: linear-gradient(
+    90deg,
+    rgb(100, 94, 203) 0%,
+    rgb(154, 154, 253) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background-color: #d8a25e;
+}
+#ser {
+  background-color: #a04747;
+}
+
+.service-section-img {
+  height: 250px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.Services-img-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.services-img-description {
+  color: white;
+  font-size: 17px;
+}
+
+#navv {
+  color: white;
+}
+
+#about-section {
+  /* height: 100vh; */
+  background-color: red;
+}
+
+#copyright {
+  font-size: 1rem;
+  /* word-spacing: 5px; */
+  font-family: cursive;
+  /* font-weight: ; */
+  color: black;
+  letter-spacing: 8px;
+}

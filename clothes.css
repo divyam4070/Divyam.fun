@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #d8a25e;
+}
+body {
+  /* background-image: url("../assets/_images/backgrounddemonslayer.jpg"); */
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container {
+  height: 100%;
+  background-color: rgb(0, 79, 47);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a04747;
+}
+
+.heading {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.ngolist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 4rem; */
+  justify-content: space-between;
+}
+.ngo1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem;
+  padding: 4rem;
+  border: solid;
+  width: 45rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px black;
+  background-color: #343131;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #a04747;
+  height: 40px;
+  width: 150px;
+  margin-left: 4rem;
+  border-width: 0px;
+  border-radius: 1rem;
+  border: solid;
+  cursor: pointer;
+}
+p {
+  font-size: 0.75rem;
+}

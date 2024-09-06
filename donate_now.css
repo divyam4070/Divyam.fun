@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  /* color: black; */
+}
+
+.container {
+  background-color: #008db0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.ngo-info {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 75%;
+  margin: 3rem;
+  padding: 3rem;
+}
+.donor-reviews {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 75%;
+  margin: 3rem;
+  padding: 3rem;
+}
+.info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.phone {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.owner {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.review1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 1rem;
+}
+.comment {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.user-info {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.trust-name {
+  font-weight: 900;
+  /* padding-bottom: 1rem; */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.donate-button {
+  position: fixed;
+  bottom: 2rem;
+}
+button {
+  font-size: 2rem;
+  color: white;
+  background-color: red;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* .posts {
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-image {
+  background-image: url("/background.jpg");
+  background-color: red;
+  width: 50%;
+}
+.post-para {
+  width: 50%;
+  background-color: green;
+} */
+
+.posts {
+  /* height: 100vh; */
+  background-color: #008db0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.com {
+  width: 43rem;
+  font-size: 2rem;
+  margin: 2rem;
+  padding-bottom: 2rem;
+}
