@@ -1,0 +1,171 @@
+body {
+  overflow: hidden;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url("background.png"); */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 2rem;
+}
+
+.red {
+  background-color: #ff9999;
+}
+
+.green {
+  background-color: #99ffa0;
+}
+
+.blue {
+  background-color: #9999ff;
+}
+.yellow {
+  background-color: #ffff99;
+}
+
+.container {
+  box-shadow: 0 0 10px #cccccc;
+  border: 0.5rem solid black;
+  background-color: black;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.scoreboard {
+  z-index: 1;
+  /* box-shadow: inset 0 0 10px #cccccc75; */
+  background-color: black;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* transition: ease-in; */
+}
+/* .btn {
+} */
+
+.flashing-text {
+  font-size: 2rem; /* Example font size */
+  color: white; /* Example text color */
+  animation: fadeFlash 3s infinite; /* Apply the animation */
+  transition: ease-in;
+}
+
+/* Define the keyframes for the fade flash animation */
+@keyframes fadeFlash {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    opacity: 1; /* Fully visible again */
+  }
+}
+
+.flash-red {
+  background-color: #ff0000;
+  opacity: 1;
+  animation: fff-red 0.5s infinite;
+  transition: ease-in-out;
+}
+
+.flash-green {
+  background-color: #00ff00;
+  opacity: 1;
+  animation: fff-green 0.5s infinite;
+  transition: ease-in-out;
+}
+
+.flash-yellow {
+  background-color: #ffff00;
+  opacity: 1;
+  animation: fff-yellow 0.5s infinite;
+  transition: ease-in-out;
+}
+
+.flash-blue {
+  background-color: #0000ff;
+  opacity: 1;
+  animation: fff-blue 0.5s infinite;
+  transition: ease-in-out;
+}
+
+@keyframes fff-blue {
+  0% {
+    background-color: #9999ff;
+  }
+  50% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #9999ff;
+  }
+}
+@keyframes fff-yellow {
+  0% {
+    background-color: #ffff99;
+  }
+  50% {
+    background-color: #ffff00;
+  }
+  100% {
+    background-color: #ffff99;
+  }
+}
+@keyframes fff-green {
+  0% {
+    background-color: #99ffa0;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #99ffa0;
+  }
+}
+@keyframes fff-red {
+  0% {
+    background-color: #ff9999;
+  }
+  50% {
+    background-color: #ff0000;
+  }
+  100% {
+    background-color: #ff9999;
+  }
+}
+
+.ig {
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
