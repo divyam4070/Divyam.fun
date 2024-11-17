@@ -16,7 +16,7 @@ h1 {
   margin-top: 2rem;
 }
 
-.red {
+/* .red {
   background-color: #ff9999;
 }
 
@@ -29,6 +29,20 @@ h1 {
 }
 .yellow {
   background-color: #ffff99;
+} */
+.red {
+  background-color: #f2d8d8;
+}
+
+.green {
+  background-color: #f2d8d8;
+}
+
+.blue {
+  background-color: #f2d8d8;
+}
+.yellow {
+  background-color: #f2d8d8;
 }
 
 .container {
