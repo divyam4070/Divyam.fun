@@ -1,0 +1,88 @@
+/* style.css */
+
+/* General Styles */
+*{
+    color: orange;
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-image {
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Link Effects */
+a {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller subheading on mobile */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller paragraph text on mobile */
+    }
+
+    .profile-image {
+        width: 120px; /* Smaller profile image on mobile */
+        height: 120px;
+    }
+
+    .flex {
+        flex-direction: column; /* Stack links vertically on mobile */
+        align-items: center;
+    }
+
+    .space-x-4 {
+        margin-bottom: 1rem; /* Add space between stacked links */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Even smaller heading on very small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Even smaller subheading on very small screens */
+    }
+
+    p {
+        font-size: 0.8rem; /* Even smaller paragraph text on very small screens */
+    }
+
+    .profile-image {
+        width: 100px; /* Even smaller profile image on very small screens */
+        height: 100px;
+    }
+}
