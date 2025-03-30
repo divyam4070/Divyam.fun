@@ -1,88 +1,119 @@
-/* style.css */
-
-/* General Styles */
-*{
-    color: orange;
-}
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-.profile-image {
-    transition: transform 0.3s ease;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: black;
+  color: orange;
+  cursor: url("cursor.png"), auto;
 }
 
-.profile-image:hover {
-    transform: scale(1.1);
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: grey; */
 }
 
-/* Link Effects */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+h1 {
+  color: orange;
+  font-size: 2.5rem;
+}
+
+img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.links {
+  display: flex;
+}
+
+.socials {
+  display: flex;
+}
+
+.sub {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.5rem;
+}
+.desc {
+  color: #9ca3af;
+  margin: 1.3rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.work,
+.projects,
+.resume {
+  text-align: center;
+  color: #9ca3af;
+}
+.links {
+  display: flex;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  /* width: 20%; */
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: purple; */
+  /* border: 1px solid green; */
+  margin-top: 1rem;
+  gap: 10px;
+}
+.socials {
+  /* background-color: green;
+  border: 1px solid green; */
+  /* width: 100px; */
+  display: flex;
+  margin-top: 1rem;
+  /* width: 10%; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.he:hover {
+  color: white;
+}
+
 a {
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
+  color: #9ca3af;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+a:hover {
+  color: white;
 }
 
 a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width 0.3s ease, left 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem; /* Smaller heading on mobile */
-    }
-
-    h2 {
-        font-size: 1.5rem; /* Smaller subheading on mobile */
-    }
-
-    p {
-        font-size: 0.9rem; /* Smaller paragraph text on mobile */
-    }
-
-    .profile-image {
-        width: 120px; /* Smaller profile image on mobile */
-        height: 120px;
-    }
-
-    .flex {
-        flex-direction: column; /* Stack links vertically on mobile */
-        align-items: center;
-    }
-
-    .space-x-4 {
-        margin-bottom: 1rem; /* Add space between stacked links */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem; /* Even smaller heading on very small screens */
-    }
-
-    h2 {
-        font-size: 1.2rem; /* Even smaller subheading on very small screens */
-    }
-
-    p {
-        font-size: 0.8rem; /* Even smaller paragraph text on very small screens */
-    }
-
-    .profile-image {
-        width: 100px; /* Even smaller profile image on very small screens */
-        height: 100px;
-    }
+  color: white;
+  width: 100%;
+  left: 0;
 }
