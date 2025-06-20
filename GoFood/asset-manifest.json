@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0eda18d.css",
-    "main.js": "/static/js/main.35a6daa5.js",
-    "static/js/453.5567d74c.chunk.js": "/static/js/453.5567d74c.chunk.js",
-    "index.html": "/index.html",
-    "main.e0eda18d.css.map": "/static/css/main.e0eda18d.css.map",
-    "main.35a6daa5.js.map": "/static/js/main.35a6daa5.js.map",
-    "453.5567d74c.chunk.js.map": "/static/js/453.5567d74c.chunk.js.map"
+    "main.css": "/GoFood/static/css/main.e0eda18d.css",
+    "main.js": "/GoFood/static/js/main.569e4b3c.js",
+    "static/js/453.5567d74c.chunk.js": "/GoFood/static/js/453.5567d74c.chunk.js",
+    "index.html": "/GoFood/index.html",
+    "main.e0eda18d.css.map": "/GoFood/static/css/main.e0eda18d.css.map",
+    "main.569e4b3c.js.map": "/GoFood/static/js/main.569e4b3c.js.map",
+    "453.5567d74c.chunk.js.map": "/GoFood/static/js/453.5567d74c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0eda18d.css",
-    "static/js/main.35a6daa5.js"
+    "static/js/main.569e4b3c.js"
   ]
 }
